@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Word Mutation Tool</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+    
+    <script type="text/javascript" src="./mutate.js"></script>
+    <link rel="stylesheet" type="text/css" href="./webformat.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Lazy Conlanging!</h1>
+
+    <div>
+
+      Input:<br>
+      <textarea id="in" rows="4" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet augue at ipsum cursus accumsan. Praesent nisi massa, dapibus et consequat sit amet, accumsan sit amet felis. Nulla pretium arcu non nulla hendrerit vehicula. Duis condimentum suscipit velit a venenatis. Proin semper odio at nisl consectetur, convallis venenatis ligula interdum. Maecenas pellentesque tempus dolor nec euismod. Suspendisse nec ipsum placerat, volutpat orci id, malesuada sapien. Donec sit amet leo non nibh molestie malesuada non at mauris. Curabitur vitae nulla ut sem sagittis convallis. Aliquam sed purus dignissim, pretium erat sit amet, lobortis libero. Cras libero nibh, lobortis aliquam risus in, malesuada varius purus. Suspendisse potenti. Maecenas elit nisl, dapibus at magna sed, rhoncus ultricies elit. Integer bibendum, sem a suscipit tempor, erat dui facilisis nunc, eget vulputate felis leo sit amet ante. Nunc at tortor quis nisi hendrerit lacinia id ultrices sapien.
+      </textarea> <br>
+      
+      <input type="checkbox" id="one swaps" checked> 1:1 swaps 
+      <input type="checkbox" id="tweak doubles" checked> tweak doubles <br>
+      <input type="checkbox" id="shuffles" checked> shuffles 
+      <input type="checkbox" id="clips" checked> clips <br>
+      <input type="checkbox" id="appends" checked> appends <br>
+      
+      Advantageous: <input type="text" id="advGenes"> <br>
+      Deleterious: <input type="text" id="delGenes"> <br>
+      Mutation aggression: <input type="range" id="aggro" value="2" min="0" max="10"> <br>
+
+      <input type="submit" value="Mutate" onclick="run()"> <br>
+      
+      Output: <br> 
+      <textarea id="out" name="output"  rows="4" cols="50"> </textarea> <br>
+      
+      <input type="button" value="Out to In" onclick="outToIn()">
+      <input type="button" value="Save txt" onclick="saveFile()">
+    </div>
+
+  <p>ahj, 2016</p>
+</body>
+</html>

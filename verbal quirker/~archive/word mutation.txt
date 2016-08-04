@@ -1,0 +1,12 @@
+python program
+takes as input a txt file
+reads in as words
+sets a random flavor of mutation
+each flavor has a number of substitution
+(append or insert vowels)
+(swap t/d/b/p, drop letters, swap lttrs)
+slash mutation rules
+(insert random letters or spaces)
+that are applied with some probability
+and output into a txt file
+names [inputname]-m
